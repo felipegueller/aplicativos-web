@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 500vh;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Setting header */
+.header {
+  padding: 60px 4%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 250ms ease-in-out;
+}
+
+.header i {
+  font-size: 30px;
+  color: white;
+}
+
+.header ul {
+  list-style-type: none;
+}
+
+.header ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.header ul li a,
+.header .btn-contato {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header .btn-contato {
+  padding: 10px 20px;
+  background-color: #DB005B;
+  border-radius: 4px;
+  transition: background 250ms ease;
+}
+
+.header .btn-contato:hover {
+  background-color: #f765a2;
+  transition: background 250ms ease;
+}
+
+/* setting rolagem class */
+
+.header.rolagem {
+  background-color: #fff;
+  padding: 20px 4%;
+}
+
+.header.rolagem i,
+.header.rolagem ul li a {
+  color: #DB005B;
+}
+
+/* Banner */
+.banner {
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.banner h1 {
+  font-size: 4em;
+}
+
+.banner h1 span {
+  color: #FEE8B0;
+}
